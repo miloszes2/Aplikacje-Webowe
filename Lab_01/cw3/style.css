@@ -1,0 +1,38 @@
+div,
+img {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+
+.square1 {
+  background-color: yellow;
+}
+
+.square2 {
+  background-color: green;
+}
+.square3 {
+  background-color: aquamarine;
+}
+.square4 {
+  background-color: blue;
+}
+.square5 {
+  background-color: purple;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.row1 {
+  display: flex;
+  width: 100%;
+}
+.row2 {
+  display: flex;
+  width: 100%;
+}
