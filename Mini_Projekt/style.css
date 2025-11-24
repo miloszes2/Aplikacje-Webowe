@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'EB Garamond', serif;
+}
+
+body {
+  background-image: url('images/background.jpg');
+  height: 100vh;
+  background-repeat: repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: rgba(10, 10, 10, 0.95);
+  background-repeat: repeat;
+  width: 80%;
+  overflow: auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
+  margin-top: 30px;
+  font-size: 1.3em;
+}
+
+a:link,
+a:visited {
+  background-color: #e0e0e0;
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+a:hover,
+a:active {
+  background-color: white;
+  box-shadow: 5px 5px 8px;
+}
+
+.navbar-button {
+  border-radius: 40px;
+}
+
+header,
+h1,
+h2 {
+  font-size: 1.8em;
+  align-self: start;
+  margin: 20px 50px;
+}
+
+section {
+  font-size: 1.5em;
+  align-self: start;
+  margin: 20px 50px;
+  text-align: justify;
+}
+
+footer {
+  font-size: 1.2em;
+  bottom: 0;
+  margin: 20px 50px;
+}
+
+@media (max-width: 1070px) {
+  .container {
+    width: 100%;
+  }
+  nav {
+    width: 80%;
+  }
+}
+
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+  }
+  a {
+    margin-top: 20px;
+  }
+}
+
+/* Galeria */
+
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  font-size: 1.5em;
+}
+
+div.gallery-item {
+  margin: 5px;
+  width: calc(25% - 20px);
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  div.gallery-item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  div.gallery-item {
+    width: calc(100% - 20px);
+  }
+}
